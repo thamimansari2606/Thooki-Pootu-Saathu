@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd client && npm install && node build.mjs",
+  "outputDirectory": "client/dist",
+  "framework": null
+}

@@ -1,0 +1,16 @@
+{
+  "name": "thooki-pootu-saathu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Thooki Pootu Saathu: browser cartoon hide-and-tag survival game (server + client + shared rules).",
+  "scripts": {
+    "test:server": "node --experimental-strip-types --test server/test/*.test.ts",
+    "test:client": "node --experimental-strip-types --test client/test/*.test.ts",
+    "test": "npm run test:server && npm run test:client",
+    "typecheck:server": "cd server && tsc -p tsconfig.json",
+    "build:client": "cd client && node build.mjs",
+    "test:e2e": "node client/e2e/run-e2e.mjs",
+    "start:server": "cd server && node --experimental-strip-types src/index.ts"
+  }
+}
