@@ -5,6 +5,7 @@ services:
     runtime: node
     rootDir: server
     plan: free
+    region: singapore
     buildCommand: npm install
     startCommand: node --experimental-strip-types src/index.ts
     healthCheckPath: /health
